@@ -80,7 +80,7 @@ app.post("/send-email", async (req, res) => {
         if (error) {
             return console.log(error);
         }
-
+        console.log(info);
         res.send({
             message: "success",
             status: true

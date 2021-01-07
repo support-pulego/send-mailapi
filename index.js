@@ -68,7 +68,7 @@ app.post("/send-email", async (req, res) => {
         }
     });
     var body = req.body;
-
+    console.log(body);
     var mailOptions = {
         from: '"support" <support@bbbee>',
         to: body.to,

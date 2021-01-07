@@ -1,4 +1,4 @@
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 const express = require('express');
 
 const bodyParser = require('body-parser');
@@ -10,11 +10,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //start app 
 const port = process.env.PORT || 8081;
 
-app.get('/',(req, res)=>{
-res.send({
-"success":true,
-"status":200
-});
+app.get('/', (req, res) => {
+    res.send({
+        "success": true,
+        "status": 200
+    });
 });
 
 app.post('/signup', async (req, res) => {

@@ -70,7 +70,7 @@ app.post("/send-email", async (req, res) => {
     var body = req.body;
     console.log(body);
     var mailOptions = {
-        from: '"support" <support@bbbee>',
+        from: '"B-BBEE Commission" <support@bbbee>',
         to: body.to,
         subject: body.subject,
         html: body.message
